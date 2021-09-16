@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --google: #ea4335;
+  --naver: #2db400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+/* header section styling */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: blue;
+}
+header a {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+}
+header nav {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+header nav .google-login {
+  padding: 10px 10px;
+  background: var(--google);
+  border-radius: 5px;
+  margin-right: 20px;
+  border: 1px solid var(--google);
+}
+header nav .google-login:hover {
+  background: #fff;
+}
+header nav .google-login a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+header nav .google-login:hover a {
+  color: var(--google);
+}
+header nav .naver-login {
+  padding: 10px 10px;
+  background: var(--naver);
+  border-radius: 5px;
+  border: 1px solid var(--naver);
+}
+header nav .naver-login:hover {
+  background: #fff;
+}
+header nav .naver-login a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+header nav .naver-login:hover a {
+  color: var(--naver);
+}
+header .login-menu {
+  display: none;
+}
+
+/* main section styling */
+#main {
+  margin-top: 100px;
+}
+#main .container .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 50px;
+  margin-bottom: 10px;
+}
+#main .container .head h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+#main .container .head .btn-menu {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#main .container .head .btn-menu a {
+  margin-right: 20px;
+}
+#main .container .head .btn-menu a:last-child {
+  margin-right: 0;
+}
+#main .container .head .btn-menu .create-btn {
+  background: blue;
+  border-radius: 5px;
+  border: 2px solid blue;
+  color: #fff;
+  padding: 8px;
+  font-size: 18px;
+}
+#main .container .head .btn-menu .create-btn:hover {
+  background: none;
+  color: blue;
+}
+
+#main .container .head .btn-menu .cancle-btn {
+  background: #2c3e59;
+  border-radius: 5px;
+  border: 2px solid #2c3e59;
+  color: #fff;
+  padding: 8px;
+  font-size: 18px;
+}
+#main .container .head .btn-menu .cancle-btn:hover {
+  background: none;
+  color: #2c3e59;
+}
+#main .container .head .btn-menu .delete-btn {
+  background: crimson;
+  border-radius: 5px;
+  border: 2px solid crimson;
+  color: #fff;
+  padding: 8px;
+  font-size: 18px;
+}
+#main .container .head .btn-menu .delete-btn:hover {
+  color: crimson;
+  background: none;
+}
+#main .container .head .btn-menu .save-btn {
+  background: blue;
+  border-radius: 5px;
+  border: 2px solid blue;
+  color: #fff;
+  padding: 8px;
+  font-size: 18px;
+}
+#main .container .head .btn-menu .save-btn:hover {
+  color: blue;
+  background: none;
+}
+#main .container .content .post {
+  background: #dcdcdc;
+  margin: 10px 0px;
+  padding: 5px 10px;
+}
+#main .container .content .post .post-header {
+  border-bottom: 1px solid #000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#main .container .content .post .post-header .number {
+  font-size: 10px;
+  font-weight: 300;
+}
+#main .container .content .post .post-header .title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+#main .container .content .post .post-header .author {
+  margin-left: auto;
+  font-size: 15px;
+  font-weight: 400;
+}
+#main .container .content .post .post-content {
+  padding: 10px 0;
+  border-bottom: 1px solid #000;
+  font-size: 16px;
+}
+#main .container .content .post .post-footer {
+  padding: 5px 0;
+}
+#main .container .form-content {
+  padding: 10px 20px;
+}
+#main .container .form-content form div {
+  margin-bottom: 30px;
+}
+#main .container .form-content div input {
+  margin-top: 5px;
+  background: transparent;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  padding: 8px 10px;
+  border: 1.7px solid blue;
+  font-size: 16px;
+}
+#main .container .form-content div textarea {
+  margin-top: 5px;
+  background: transparent;
+  border-radius: 5px;
+  width: 100%;
+  height: 300px;
+  padding: 8px 10px;
+  border: 1.7px solid blue;
+  font-size: 16px;
+}
+/* media styling */
+@media (max-width: 819px) {
+  header nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e59;
+    display: block;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+  }
+  header nav.active {
+    left: 0;
+  }
+  header nav .google-login {
+    margin: 20px 20px;
+    background: none;
+    border: none;
+  }
+  header nav .google-login:hover {
+    background: none;
+    border: none;
+  }
+  header nav .google-login:hover a {
+    color: #fff;
+  }
+  header nav .naver-login {
+    margin: 20px 20px;
+    background: none;
+    border: none;
+  }
+  header nav .naver-login:hover {
+    background: none;
+    border: none;
+  }
+  header nav .naver-login:hover a {
+    color: #fff;
+  }
+  header .login-menu {
+    display: block;
+  }
+  header .login-menu i {
+    color: #fff;
+    font-size: 32px;
+  }
+}
+
+/* footer section styling */
+footer {
+  text-align: center;
+}
+
+@media (max-width: 615px) {
+  header .logo a {
+    font-size: 25px;
+  }
+}
+@media (max-width: 490px) {
+  header .logo a {
+    font-size: 20px;
+  }
+  #main .container .head {
+    margin: 0 20px;
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Boot Web Service</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- header start -->
+    <header>
+        <div class="logo">
+            <a href="/">Spring Boot로 시작하는 웹 서비스</a>
+        </div>
+        <nav>
+            <div class="google-login">
+                <a href="#">Google Login</a>
+            </div>
+            <div class="naver-login">
+                <a href="#">Naver Login</a>
+            </div>
+        </nav>
+        <div class="login-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+
+    <!-- main section start -->
+    <section id="main">
+        <div class="container">
+            <div class="head">
+                <h3>게시판</h3>
+                <div class="btn-menu">
+                    <a href="/posts/save" class="create-btn">작성</a>
+    
+                </div>
+            </div>
+            <hr>
+            <div class="content">
+                {{#posts}}
+                <div class="post">
+                    <div class="post-header">
+                        <span class="number">{{id}}</span>
+                        <a href="/posts/update/{{id}}" class="title">{{title}}</a>
+                        <span class="author">{{author}}</span>
+                    </div>
+                    <div class="post-content">
+                        <p></p>
+                    </div>
+                    <div class="post-footer">
+                        <span class="update-date">{{modifiedDate}}</span>
+                    </div>
+                </div>
+                {{/posts}}
+
+            </div>
+    
+        </div>
+    </section>
+
+    <!-- footer start -->
+    <footer>
+        <p>문의사항은 kom2727@gmail.com으로 메일 보내주세요.</p>
+    </footer>
+    <script src="/js/app.js"></script>
+</body>
+</html>
