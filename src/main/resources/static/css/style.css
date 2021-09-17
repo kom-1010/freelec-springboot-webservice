@@ -15,6 +15,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+#user {
+    color: #fff;
+}
+
 /* header section styling */
 header {
   position: fixed;
