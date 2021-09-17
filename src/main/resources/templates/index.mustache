@@ -20,18 +20,22 @@
                 </div>
             {{/userName}}
         <nav>
-            <div class="google-login">
+
             {{#userName}}
+                <div class="google-login">
                     <a href="/logout" class="btn btn-info active" role="button">Logout</a>
+                </div>
             {{/userName}}
             {{^userName}}
-                    <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a>
-            {{/userName}}
+            <div class="google-login">
+                <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a>
             </div>
 
             <div class="naver-login">
-                <a href="#">Naver Login</a>
+                <a href="/oauth2/authorization/naver" class="btn btn-success active" role="button">Naver Login</a>
             </div>
+            {{/userName}}
+
         </nav>
         <div class="login-menu">
             <i class="fas fa-bars"></i>
